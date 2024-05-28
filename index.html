@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pista's - XO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="Container">
+        <div class="Top_Container">
+            <div class="Player">
+                <header>Player</header>
+                <br>
+                <header id="P_Score">0 </header>
+            </div>
+            <div class="Tie">
+                <header>Tie</header>
+                <br>
+                <header id="Ties">0 </header>
+            </div>
+            <div class="Ai">
+                <header>Ai</header>
+                <br>
+                <header id="C_Score">0 </header>
+            </div>
+        </div>
+        <div class="Mid_Container">
+            <button class="R1_C1 box empty" id="R1_C1" onclick="Place(1,1)"></button>
+            <button class="R1_C2 box empty" id="R1_C2" onclick="Place(1,2)"></button>
+            <button class="R1_C3 box empty" id="R1_C3" onclick="Place(1,3)"></button>
+            <button class="R2_C1 box empty" id="R2_C1" onclick="Place(2,1)"></button>
+            <button class="R2_C2 box empty" id="R2_C2" onclick="Place(2,2)"></button>
+            <button class="R2_C3 box empty" id="R2_C3" onclick="Place(2,3)"></button>
+            <button class="R3_C1 box empty" id="R3_C1" onclick="Place(3,1)"></button>
+            <button class="R3_C2 box empty" id="R3_C2" onclick="Place(3,2)"></button>
+            <button class="R3_C3 box empty" id="R3_C3" onclick="Place(3,3)"></button>
+        </div>
+        <div class="Bot_Container">
+            <Button class="Clear_Round Btn" onclick="Clear_Round(true)">Clear Round</Button>
+            <button class="Reset_Game Btn" onclick="Clear_Everything()">Reset Game</button>
+        </div>
+    </div>
+
+    <script src="funtionality.js"></script>
+</body>
+
+</html>
